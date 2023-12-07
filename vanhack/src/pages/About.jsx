@@ -1,13 +1,12 @@
 
 import React from 'react'
 
-import Nav from './Nav'
-import Footer from './Footer'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 function About() {
   return (
     <>
-      <Nav />
         <section>
           <div className='bg-[url(./assets/about.png)] w-full h-56 bg-no-repeat bg-cover bg-center'/>
 
@@ -44,7 +43,6 @@ function About() {
             </div>
 
         </section>
-      <Footer />
     </>
   )
 }

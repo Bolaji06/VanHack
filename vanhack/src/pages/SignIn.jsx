@@ -1,11 +1,11 @@
 
 import React from 'react';
 
-import Nav from './Nav';
-import Footer from './Footer';
-import Input from './Input';
-import Button from './Button';
-import HostNav from './HostNav';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+import Input from '../components/Input';
+import Button from '../components/Button';
+import HostNav from '../components/HostNav';
 import { Link } from 'react-router-dom';
 
 
