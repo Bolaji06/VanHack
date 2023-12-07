@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Nav() {
   return (
@@ -10,8 +10,9 @@ function Nav() {
                 <Link to="/" className='uppercase font-bold text-2xl'>#Vanlife</Link>
             </div>
             <div className='flex gap-6 mr-5'>
-                <Link to="/about" className='hover:underline'>About</Link>
-                <Link to="/vans" className='hover:underline'>Vans</Link>
+                <NavLink to="/host" className={({ isActive }) => isActive ? 'text-green-900 font-bold underline' : null}>Host</NavLink>
+                <NavLink to="/about" className={({ isActive })=> isActive ? 'text-green-900 font-bold underline' : null}>About</NavLink>
+                <NavLink to="/vans" className={({ isActive }) => isActive ? 'text-green-900 font-bold underline' : null}>Vans</NavLink>
             </div>
         </nav>
     </>

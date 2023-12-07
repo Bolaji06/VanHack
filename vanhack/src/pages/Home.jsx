@@ -1,15 +1,15 @@
 
 import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 
 function HomePage() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <section className="w-full bg-[url(./assets/hero.png)] bg-no-repeat
-      bg-center bg-cover bg-fixed overflow-hidden">
+      bg-center bg-cover bg-fixed h-screen overflow-hidden">
 
         <div className='flex justify-center item-center flex-col text-white'>
             <div className='mx-auto my-[10%]'>
@@ -24,7 +24,6 @@ function HomePage() {
             </div>
         </div>
       </section>
-      <Footer />
     </>
   )
 }
